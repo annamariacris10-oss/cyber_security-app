@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>{{ title }}</h1>
+
+<div class="result-box">
+    <p>{{ result }}</p>
+
+    {% if notes %}
+    <ul>
+        {% for n in notes %}
+        <li>{{ n }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>
+
+<a href="/" class="back">← Go Back</a>
+
+</body>
+</html>

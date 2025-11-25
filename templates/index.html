@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyber Security Toolkit (Safe)</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Cyber Security Toolkit (Safe Web Version)</h1>
+
+<div class="container">
+
+    <!-- Password Check -->
+    <div class="card">
+        <h2>Password Strength Checker</h2>
+        <form action="/check_password" method="POST">
+            <input type="password" name="password" placeholder="Enter password" required>
+            <button type="submit">Check</button>
+        </form>
+    </div>
+
+    <!-- File Integrity -->
+    <div class="card">
+        <h2>File Integrity Checker</h2>
+        <form action="/file_hash" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">Generate Hash</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
